@@ -88,4 +88,6 @@ button {
     background-color: rgb(25, 25, 25);
     border: solid gray;
     border-radius: 10px;
+    color: white;
+    font-size: 1rem;
 }
