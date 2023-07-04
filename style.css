@@ -44,7 +44,6 @@ button {
 
 .seperater {
     position: relative;
-    /* border: solid; */
     margin-bottom: 200px;
 }
 
@@ -56,7 +55,6 @@ button {
 }
 
 .guess p {
-    /* border: solid; */
     width: 60px;
     margin: auto;
     padding: 40px 60px;
@@ -80,7 +78,6 @@ button {
 }
 
 .bottomRight {
-    /* border: solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
