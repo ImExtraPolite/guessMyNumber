@@ -7,7 +7,6 @@ let randNum = Math.floor(Math.random() * 100) + 1;
 const userGuess = document.querySelector(".userGuess");
 const p1 = document.querySelector(".bottomLeft p:first-child");
 let down = 10;
-const reset = document.querySelector(".class");
 
 check.addEventListener("click", () => {
     if (down < 1) {
