@@ -5,18 +5,21 @@ const numScore = document.querySelector("#numScore");
 const check = document.querySelector(".check");
 let randNum = Math.floor(Math.random() * 100) + 1; 
 const userGuess = document.querySelector(".userGuess");
+const p1 = document.querySelector(".bottomLeft p:first-child");
+
 
 check.addEventListener("click", () => {
-    // console.log(randNum);
-    if (numScore.textContent < 0 || numScore.textContent > 100) {
-        userGuess.textContent == "Out of bounds";
-    } 
-    
-    // else if (randNum == numScore.textContent) {
-    //     userGuess.textContent = "Correct";
-    // } else if (randNum < numScore.textContent) {
-    //     userGuess.textContent = "too high";
-    // } 
+    if (numScore.value < 0 || numScore.value > 100) {
+        p1.textContent = "Out of bounds";
+    } else if (randNum == numScore.value) {
+        p1.textContent = "Correct";
+
+        
+    } else if (numScore.value < randNum) {
+        p1.textContent = "Too low";
+    } else if (numScore.value > randNum) {
+        p1.textContent = "Too high";
+    }
 });
 
 
